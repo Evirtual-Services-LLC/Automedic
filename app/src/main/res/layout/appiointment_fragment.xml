@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_bg"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Time"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namemap"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/d_din_bold"
+                android:gravity="center|center_vertical"
+                android:padding="10dp"
+                android:text="Schedule Appointment Date "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/calendarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/confirm_dateandTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calendarLayout"
+                android:background="@color/black"
+                android:fontFamily="@font/d_din_font"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="Selected  Date &amp; Time :November 30,2019"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/Time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/tv_timeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/d_din_font"
+                android:text="Desired Time Range (3 hr Window)"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_timeTitle"
+                android:layout_margin="20dp"
+                android:background="@drawable/back_bg_edittextall">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/d_din_font"
+                    android:padding="10dp"
+                    android:text="Select Time"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_toLeftOf="@+id/drop_icon" />
+
+                <Spinner
+                    android:id="@+id/selectService_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/drop_icon" />
+
+                <ImageView
+                    android:id="@+id/drop_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/clock" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:fontFamily="@font/d_din_bold"
+            android:gravity="center"
+            android:text="Continue"
+            android:textColor="@color/text_green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
+

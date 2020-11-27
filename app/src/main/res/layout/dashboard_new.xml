@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/layoutHomeOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg_green">
+
+                    <ImageView
+                        android:id="@+id/dashboardImageOne"
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/book"
+
+                        />
+                    <TextView
+                        android:id="@+id/textDashboardOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/d_din_font"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_below="@+id/dashboardImageOne"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutHomeTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg_green">
+
+                    <ImageView
+                        android:id="@+id/dashboardImageTwo"
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/quote"
+                        />
+                    <TextView
+                        android:id="@+id/textDashboardTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/d_din_font"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_below="@+id/dashboardImageTwo"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/layoutHomethree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg_green">
+
+                    <ImageView
+                        android:id="@+id/dashboardImageThree"
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/history"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/textDashboardThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_below="@+id/dashboardImageThree"
+                        android:fontFamily="@font/d_din_font"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutHomeFour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg_green">
+
+                    <ImageView
+                        android:id="@+id/dashboardImageFour"
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/chat2"/>
+                    <TextView
+                        android:id="@+id/textDashboardFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/d_din_font"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_below="@+id/dashboardImageFour"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/layoutHomeFive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg_green">
+
+                    <ImageView
+                        android:id="@+id/dashboardImageFive"
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/paymentcard"
+
+                        />
+                    <TextView
+                        android:id="@+id/textDashboardFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_below="@+id/dashboardImageFive"
+                        android:fontFamily="@font/d_din_font"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutHomeSix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg_green">
+
+                    <ImageView
+                        android:id="@+id/dashboardImageSix"
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/calendarwhite"/>
+                    <TextView
+                        android:id="@+id/textDashboardSix"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/d_din_font"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_below="@+id/dashboardImageSix"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/layoutHomeSeven"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg_green">
+
+                    <ImageView
+                        android:id="@+id/dashboardImageSeven"
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/note" />
+                    <TextView
+                        android:id="@+id/textDashboardSeven"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/d_din_font"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_below="@+id/dashboardImageSeven"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutHomeEight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg_green">
+
+                    <ImageView
+                        android:id="@+id/dashboardImageEight"
+                        android:layout_width="@dimen/dp_45"
+                        android:layout_height="@dimen/dp_45"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/client" />
+                    <TextView
+                        android:id="@+id/textDashboardEight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_below="@+id/dashboardImageEight"
+                        android:fontFamily="@font/d_din_font"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

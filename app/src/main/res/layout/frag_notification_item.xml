@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_notifcation"
+        android:layout_width="@dimen/padding_36"
+        android:layout_height="@dimen/padding_36"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/notification" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="@dimen/padding_36"
+        android:layout_height="@dimen/padding_36"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/right_arrow" />
+
+    <RelativeLayout
+        android:id="@+id/rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/dp_4"
+        android:layout_toLeftOf="@+id/iv_arrow"
+        android:layout_toRightOf="@+id/iv_notifcation">
+
+
+        <TextView
+            android:id="@+id/tv_notification_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/d_din_font"
+            android:gravity="start"
+
+            android:padding="@dimen/dp_6"
+            android:text="Notifcation name and title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_notification_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_notification_title"
+            android:fontFamily="@font/d_din_font"
+            android:gravity="start"
+            android:padding="@dimen/dp_6"
+            android:text="Date : 25sep"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.75dp"
+        android:layout_below="@+id/rel_1"
+        android:background="@color/black" />
+
+</RelativeLayout>

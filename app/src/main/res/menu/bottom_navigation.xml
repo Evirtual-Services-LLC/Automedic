@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/medical"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_payment"
+        android:icon="@drawable/card_black"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_calender"
+        android:icon="@drawable/calendar"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_quote"
+        android:icon="@drawable/icon"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/chat"
+        android:title="" />
+</menu>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rel_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Agreement"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/fontSize_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Click Here"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontSize_16" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rel_1"
+        android:background="@color/lightGrey" />
+
+    <RelativeLayout
+        android:id="@+id/rel_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Policy"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/fontSize_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Click Here"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontSize_16" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rel_2"
+        android:background="@color/lightGrey" />
+
+    <RelativeLayout
+        android:id="@+id/rel_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Documents"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/fontSize_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Click Here"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontSize_16" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rel_3"
+        android:background="@color/lightGrey" />
+
+    <RelativeLayout
+        android:id="@+id/rel_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Information"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/fontSize_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Click Here"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontSize_16" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rel_4"
+        android:background="@color/lightGrey" />
+
+    <RelativeLayout
+        android:id="@+id/rel_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Terms &amp; Condition"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/fontSize_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/d_din_font"
+            android:padding="@dimen/dp_12"
+            android:text="Click Here"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontSize_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rel_5"
+        android:background="@color/lightGrey" />
+</RelativeLayout>

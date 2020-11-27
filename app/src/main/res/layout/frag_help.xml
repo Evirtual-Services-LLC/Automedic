@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_main_layout" />
+
+    <TextView
+        android:id="@+id/tv_auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/d_din_bold"
+        android:gravity="center"
+        android:padding="@dimen/dp_25"
+        android:text="The AutoMedic"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_auto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_40"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copy_right"
+        android:layout_marginBottom="@dimen/dp_150"
+        android:layout_weight="1.4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageHelp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/d_din_font"
+                android:gravity="center"
+                android:text="Connect with us"
+                android:textColor="@color/text_green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageHelp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_12"
+                android:fontFamily="@font/d_din_font"
+                android:gravity="center"
+                android:text="1-855-9-AutoMD"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_12"
+                android:fontFamily="@font/d_din_font"
+                android:gravity="center"
+                android:text="info@TheautoMedic.com"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/copy_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/copyright"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

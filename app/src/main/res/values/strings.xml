@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Automedic</string>
+    <string name="ok">Ok</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="welcome1">Hello, Welcome to The AutoMedic!</string>
+    <string name="welcome2">GET STARTED NOW</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="EditProfile">Edit Profile</string>
+    <string name="changePassword">Change Password</string>
+    <string name="nearBy">Near By</string>
+    <string name="help">Help</string>
+    <string name="logout">Sign Out</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_use">Terms Of Use</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="validationErrors">Validation Errors</string>
+    <string name="text_item">Message</string>
+    <string name="bt_sent">Sent</string>
+    <string name="copyright">&#169; 2020 The AutoMedic. All Rights Reserved.</string>
+</resources>

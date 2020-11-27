@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/cric91_bnv_tab"
+        android:layout_height="match_parent" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/cric91_bnv_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/black"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/bottom_navigation" />
+</RelativeLayout>

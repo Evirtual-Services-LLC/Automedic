@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar_main_layout" />
+
+
+    <RelativeLayout
+        android:id="@+id/cardsLaout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_toolbar"
+        android:background="@color/black"
+
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_amountTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Total Payable Amount : $22.4"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textUpoo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_amountTitle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="All Major Card Accepted"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardsLaout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/card">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="right"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="20dp"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/layout_cardNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_title"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:textColorHint="@color/white">
+
+                            <EditText
+                                android:id="@+id/et_cardNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:hint="CARD NUMBER"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:text=""
+                                android:textColor="@android:color/white"
+                                android:textColorHint="@android:color/white"
+                                android:textCursorDrawable="@null"
+                                android:textSize="18sp" />
+
+                            <ImageView
+                                android:id="@+id/img_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_cardNumber"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:textColorHint="@color/white">
+
+                            <EditText
+                                android:id="@+id/et_expDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:hint="EXP DATE"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:text=""
+                                android:textColor="@android:color/white"
+                                android:textColorHint="@android:color/white"
+                                android:textCursorDrawable="@null"
+                                android:textSize="18sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/service"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="DEBIT/CREDIT CARD NUMBER"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/creditCardNumberEdit"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/d_din_font"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardNumberLayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="NAME ON CARD"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/creditCardNameEdit"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_name"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/d_din_font"
+                    android:gravity="center"
+                    android:hint=""
+                    android:inputType="text"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cardExpireLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardNameLayout"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/titleExpirationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="EXPIRATION DATE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/cardExpireMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titleExpirationDate"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/d_din_font"
+                    android:hint="MM/YY"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+                <!--        <TextView-->
+
+                <!--            android:id="@+id/slash"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_below="@id/titleExpirationDate"-->
+                <!--            android:layout_toRightOf="@id/cardExpireMonth"-->
+                <!--            android:padding="5dp"-->
+                <!--            android:text="/"-->
+                <!--            android:visibility="gone"-->
+                <!--            android:textColor="@color/gray"-->
+                <!--            android:textSize="20dp"-->
+                <!--            android:textStyle="bold" />-->
+
+                <!--        <EditText-->
+                <!--            android:id="@+id/cardExpireYear"-->
+                <!--            android:layout_width="wrap_content"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_below="@id/titleExpirationDate"-->
+                <!--            android:layout_marginLeft="@dimen/_10sdp"-->
+                <!--            android:layout_marginTop="5dp"-->
+                <!--            android:visibility="gone"-->
+                <!--            android:layout_marginRight="@dimen/_10sdp"-->
+                <!--            android:layout_toRightOf="@id/slash"-->
+                <!--            android:backgroundTint="@color/grey_light"-->
+                <!--            android:fontFamily="@font/d_din_font"-->
+                <!--            android:gravity="center"-->
+                <!--            android:hint="YY"-->
+                <!--            android:inputType="number"-->
+                <!--            android:maxLength="2"-->
+                <!--            android:maxLines="1"-->
+                <!--            android:padding="5dp"-->
+                <!--            android:text=""-->
+                <!--            android:textColor="@android:color/black"-->
+                <!--            android:textColorHint="@android:color/black"-->
+                <!--            android:textCursorDrawable="@null"-->
+                <!--           android:textSize="18sp" -->
+                <!--            android:typeface="sans" />-->
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/cardSecurityCodeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardExpireLayout">
+
+                <TextView
+
+                    android:id="@+id/cardSecurityCodeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:text="SECURITY CODE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_cvv"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cardSecurityCodeTxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/d_din_font"
+                    android:gravity="center"
+                    android:hint="XXX"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/cb_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardSecurityCodeLayout"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Save card for later use"
+                android:textColor="@color/caldroid_black"
+                android:textSize="@dimen/fontSize_16">
+
+            </CheckBox>
+            <RelativeLayout
+                android:id="@+id/rel_blank"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/cb_save"
+                android:layout_height="110dp">
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rel_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_below="@+id/rel_blank">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_12"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/buttonHeight_40"
+                        android:layout_gravity="center_vertical|center"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="@dimen/dp_12"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_percentage"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_4"
+                        android:text="1%"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/buttonHeight_40"
+                        android:layout_gravity="center_vertical|center"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_percentage"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_4"
+                        android:text="2%"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/buttonHeight_40"
+                        android:layout_gravity="center_vertical|center"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_percentage"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_4"
+                        android:text="5%"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/buttonHeight_40"
+                        android:layout_gravity="center_vertical|center"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="@dimen/dp_12"
+                        android:layout_weight="1"
+                        android:background="@drawable/bottom_percentage"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_4"
+                        android:text="10%"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/rel_save"
+                android:layout_centerHorizontal="true"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:id="@+id/paymentBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/sch_laterUser"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/d_din_font_bold"
+                        android:gravity="center"
+                        android:text="Pay Now"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_list_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/d_din_font"
+        android:gravity="start"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/dp_12"
+        android:text="Fee"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/d_din_font"
+        android:gravity="start|end"
+        android:padding="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:text="$200.00"
+        android:textColor="@color/text_blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

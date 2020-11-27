@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "25567993542",
+    "firebase_url": "https://automedic-ad558.firebaseio.com",
+    "project_id": "automedic-ad558",
+    "storage_bucket": "automedic-ad558.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25567993542:android:18f90e90b8341f971741c7",
+        "android_client_info": {
+          "package_name": "com.evs.automedic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25567993542-f1g6itq28u741ugovh2e5l2iorv9mvg8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.evs.automedic",
+            "certificate_hash": "26b108729e7c6b6b53d39ac526a34486114c7d42"
+          }
+        },
+        {
+          "client_id": "25567993542-76lv6k4cgomv189lbbna545rm0ot8jh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp6e3dOmiHQyFOqXx5y_cSYquypwyDo1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25567993542-76lv6k4cgomv189lbbna545rm0ot8jh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

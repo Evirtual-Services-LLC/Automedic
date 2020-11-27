@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.evs.automedic">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_64"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_64"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ui.activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.Welcome"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.GetStarted"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.LoginScreen"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.RegisterScreen"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.CompleteProfile"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.ForgotPassword"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".chatActivity.ChatActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.AppointmentActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.QuoteActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ui.activity.ContactUsActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+    </application>
+
+</manifest>
